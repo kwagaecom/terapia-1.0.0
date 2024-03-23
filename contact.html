@@ -298,6 +298,18 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // When back-to-top button is clicked
+    $('#back-to-top-button').click(function(event) {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        // Animate scrolling to the top
+        $('html, body').animate({scrollTop: 0}, 'slow');
+    });
+});
+</script>
 
         
         <!-- JavaScript Libraries -->
