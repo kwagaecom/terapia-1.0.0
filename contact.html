@@ -124,8 +124,8 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-5 col-xl-5 contact-form wow fadeInLeft" data-wow-delay="0.1s">
                         <h2 class="display-5 text-white mb-2">Get in Touch</h2>
-                        <p class="mb-4 text-white">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-dark fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <form>
+                        
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
@@ -169,6 +169,32 @@
                             </div>
                         </form>
                     </div>
+                    <script>
+    // JavaScript to handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const formData = new FormData(event.target);
+        const email = 'kwagaecom@gmail.com'; // Your Gmail address
+        const subject = 'New Contact Form Submission'; // Subject for the email
+
+        let message = "New contact form submission:\n\n";
+
+        // Iterate over form data and append to message
+        for (const [key, value] of formData.entries()) {
+            message += `${key}: ${value}\n`;
+        }
+
+        // Create a "mailto" URL with the pre-filled email subject and body
+        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+        // Open the default email client with the pre-filled email
+        window.location.href = mailtoURL;
+
+        // You can also display a success message or redirect the user to a thank-you page
+    });
+</script>
+
                     <div class="col-lg-2 col-xl-2 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="bg-transparent rounded">
                             <div class="d-flex flex-column align-items-center text-center mb-4">
