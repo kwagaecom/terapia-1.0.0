@@ -75,20 +75,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                       <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link ">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                          <a href="testimonial.html" class="nav-item nav-link">Review</a>
-                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">For Patienst</a>
-                            <div class="dropdown-menu m-0">
-                                
-                               
-                                <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                <a href="team.html" class="dropdown-item">Our Doctor</a>
-                                
-                            </div>
-                        </div>
+                          <a href="feedback.html" class="nav-item nav-link">Feedback</a>
+                            <a href="schedule.html" class="nav-item nav-link">Schedule</a>
                        
                         <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
                     </div>
@@ -101,220 +92,432 @@
 
 
         <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h1>
-               <!-- <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">Contact</li>
-                </ol>     -->
-            </div>
-        </div>
-        <!-- Header End -->
-
-
-        <!-- Contact Start -->
-        <div class="container-fluid contact py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style mb-4">
-                        <h4 class="sub-title text-white px-3 mb-0">Contact Us</h4>
-                    </div>
-                     <!--<p class="mb-0 text-black-50">oribus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p> -->
-                </div>
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-5 col-xl-5 contact-form wow fadeInLeft" data-wow-delay="0.1s">
-                        <h2 class="display-5 text-white mb-2">Get in Touch</h2>
-                      
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent border border-white" id="name" name="Name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent border border-white" id="email" name="Email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="phone" class="form-control bg-transparent border border-white" id="phone" name="Mobile" placeholder="Phone">
-                                        <label for="phone">Your Phone</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent border border-white" id="project" name="Project" placeholder="Project">
-                                        <label for="project">Your Project</label>
-                                    </div>
-                                </div>
-  <div class="col-xl-6">
-                    <input type="date" class="form-control col-sm-10 col-sm-2 col-form-label" name="date">
-                </div>
-                <div class="col-xl-6">
-                  <input type="time" class="form-control col-sm-10 col-sm-2 col-form-label" name="time">
-                </div> 
-                        
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent border border-white" id="subject" name="Subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                      <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-transparent border border-white" placeholder="Leave a message here" name="Message" style="height: 160px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-light text-primary w-100 py-3">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-<script>
-    // JavaScript to handle form submission
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        const formData = new FormData(event.target);
-        const email = 'kwagaecom@gmail.com'; // Your Gmail address
-        const subject = 'New Contact Form Submission'; // Subject for the email
-
-        let message = "New contact form submission:\n\n";
-
-        // Iterate over form data and append to message
-        for (const [key, value] of formData.entries()) {
-            message += `${key}: ${value}\n`;
-        }
-
-        // Create a "mailto" URL with the pre-filled email subject and body
-        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-        // Open the default email client with the pre-filled email
-        window.location.href = mailtoURL;
-
-        // You can also display a success message or redirect the user to a thank-you page
-    });
-</script>
-                    <div class="col-lg-2 col-xl-2 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="bg-transparent rounded">
-                            <div class="d-flex flex-column align-items-center text-center mb-4">
-                                <div class="bg-white d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-map-marker-alt fa-2x text-primary"></i></div>
-                                <h4 class="text-dark">Addresses</h4>
-                                <p class="mb-0 text-white">123 ranking Street, New York, USA</p>
-                            </div>
-                            <div class="d-flex flex-column align-items-center text-center mb-4">
-                                <div class="bg-white d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-phone-alt fa-2x text-primary"></i></div>
-                                <h4 class="text-dark">Mobile</h4>
-                                <p class="mb-0 text-white">+012 345 67890</p>
-                                <p class="mb-0 text-white">+012 345 67890</p>
-                            </div>
-                           
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <div class="bg-white d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-envelope-open fa-2x text-primary"></i></div>
-                                <h4 class="text-dark">Email</h4>
-                               <p class="mb-0 text-white">help@wellness.com</p>
-                                <p class="mb-0 text-white">consult@wellness.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-xl-5 wow fadeInRight" data-wow-delay="0.3s">
-                        <div class="d-flex justify-content-center mb-4">
-                            <a class="btn btn-lg-square btn-light rounded-circle mx-2" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle mx-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="rounded h-100">
+        <div class="rounded h-500">
                             <iframe class="rounded w-100" 
                             style="height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
+        <!-- Header End -->
+
+
+        <!-- Contact Start -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <style>
+    /* Your existing styles */
+    * {
+      margin: 0; padding: 0;
+    }
+    body {
+      padding: 2em;
+    }
+    .multisteps-form__progress {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    }
+    .multisteps-form__progress-btn {
+      transition-property: all;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
+      position: relative;
+      padding-top: 20px;
+      color: rgba(108, 117, 125, 0.7);
+      text-indent: -9999px;
+      border: none;
+      background-color: transparent;
+      outline: none !important;
+      cursor: pointer;
+    }
+    @media (min-width: 500px) {
+      .multisteps-form__progress-btn {
+        text-indent: 0;
+      }
+    }
+    .multisteps-form__progress-btn:before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: block;
+      width: 13px;
+      height: 13px;
+      content: '';
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      transition: all 0.15s linear 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+      transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+      transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      background-color: #fff;
+      box-sizing: border-box;
+      z-index: 3;
+    }
+    .multisteps-form__progress-btn:after {
+      position: absolute;
+      top: 5px;
+      left: calc(-50% - 13px / 2);
+      transition-property: all;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
+      display: block;
+      width: 100%;
+      height: 2px;
+      content: '';
+      background-color: currentColor;
+      z-index: 1;
+    }
+    .multisteps-form__progress-btn:first-child:after {
+      display: none;
+    }
+    .multisteps-form__progress-btn.js-active {
+      color: #007bff;
+    }
+    .multisteps-form__progress-btn.js-active:before {
+      -webkit-transform: translateX(-50%) scale(1.2);
+              transform: translateX(-50%) scale(1.2);
+      background-color: currentColor;
+    }
+    .multisteps-form__form {
+      position: relative;
+    }
+    .multisteps-form__panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .multisteps-form__panel.js-active {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+  <style>
+.form-group-inline {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.multisteps-form__input {
+    flex: 1; /* Ensures the input fields share the space equally */
+}
+  </style>
+  <div class="multisteps-form">
+    <!--progress bar-->
+    <div class="row">
+      <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+        <div class="multisteps-form__progress">
+          <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Patient Info</button>
+          <button class="multisteps-form__progress-btn" type="button" title="Address">Address</button>
+          <button class="multisteps-form__progress-btn" type="button" title="Order Info">Emergency Info</button>
+          <button class="multisteps-form__progress-btn" type="button" title="Comments">Comments</button>
+        </div>
+      </div>
+    </div>
+    <!--form panels-->
+    <div class="row">
+      <div class="col-12 col-lg-8 m-auto">
+ <form id="msform" class="multisteps-form__form">
+  <!--single form panel-->
+  <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+    <h5 align="center" class="multisteps-form__title">Patient Info</h5>
+    <div class="multisteps-form__content">
+      <div class="form-row mt-4">
+        <div class="col-6">
+          <div class="form-group">
+    <label for="dob">Date of Birth</label>
+    <input type="date" class="form-control py-3 border-primary bg-transparent" id="dob" name="DOB">
+</div>
+
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="firstName" placeholder="First Name"/>
+          </div>
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="lastName" placeholder="Last Name"/>
+          </div>
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="Occupation" placeholder="Occupation"/>
+          </div>
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="email" placeholder="Email"/>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="number" name="Age" placeholder="Age"/>
+          </div>
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="number" name="HomeMobile" placeholder="Home Mobile"/>
+          </div>
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="number" name="OfficeMobile" placeholder="Office Mobile"/>
+          </div>
+          <div class="form-group">
+            <span class="f6">Sex</span><br>
+            <label for="m"><input type="radio" name="Gender" id="m" value="m"> Male</label>
+            <label for="f"><input type="radio" name="Gender" id="f" value="f"> Female</label>
+          </div>
+          <div class="form-group">
+            <span class="f6">How did you hear</span><br>
+            <label for="I"><input type="radio" name="Search" id="I" value="I"> Internet</label>
+            <label for="L"><input type="radio" name="Search" id="L" value="L"> Locally</label>
+          </div>
+        </div>
+      </div>
+      <div class="button-row d-flex mt-4">
+        <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+      </div>
+    </div>
+  </div>
+  <!--single form panel-->
+  <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+    <h5 align="center" class="multisteps-form__title">Address Details</h5>
+    <div class="multisteps-form__content">
+      <div class="form-row mt-4">
+        <div class="col-6">
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="homeAddress" placeholder="Home Address"/>
+          </div>
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="officeAddress" placeholder="Office Address"/>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="city" placeholder="City"/>
+          </div>
+         <div class="form-group">
+  <select class="multisteps-form__select form-control" name="state">
+    <option selected="selected">State...</option>
+    <option>Andhra Pradesh</option>
+    <option>Arunachal Pradesh</option>
+    <option>Assam</option>
+    <option>Bihar</option>
+    <option>Chhattisgarh</option>
+    <option>Goa</option>
+    <option>Gujarat</option>
+    <option>Haryana</option>
+    <option>Himachal Pradesh</option>
+    <option>Jharkhand</option>
+    <option>Karnataka</option>
+    <option>Kerala</option>
+    <option>Madhya Pradesh</option>
+    <option>Maharashtra</option>
+    <option>Manipur</option>
+    <option>Meghalaya</option>
+    <option>Mizoram</option>
+    <option>Nagaland</option>
+    <option>Odisha</option>
+    <option>Punjab</option>
+    <option>Rajasthan</option>
+    <option>Sikkim</option>
+    <option>Tamil Nadu</option>
+    <option>Telangana</option>
+    <option>Tripura</option>
+    <option>Uttar Pradesh</option>
+    <option>Uttarakhand</option>
+    <option>West Bengal</option>
+    <option>Andaman and Nicobar Islands</option>
+    <option>Chandigarh</option>
+    <option>Dadra and Nagar Haveli and Daman and Diu</option>
+    <option>Delhi</option>
+    <option>Ladakh</option>
+    <option>Lakshadweep</option>
+    <option>Puducherry</option>
+    <option>Jammu and Kashmir</option>
+  </select>
+</div>
+
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="zip" placeholder="Zip"/>
+          </div>
+        </div>
+      </div>
+      <div class="button-row d-flex mt-4">
+        <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+        <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+      </div>
+    </div>
+  </div>
+  <!--single form panel-->
+  <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+    <h5 align="center" class="multisteps-form__title">Emergency Info</h5>
+    <div class="multisteps-form__content">
+      <div class="form-row mt-4">
+        <div class="col-6">
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="friendRelativeName" placeholder="Friend/Relative Name"/>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="friendRelativeNumber" placeholder="Friend/Relative Number"/>
+          </div>
+        </div>
+      </div>
+      <div class="form-row mt-4">
+        <div class="col-6">
+          <div class="form-group">
+            <input class="multisteps-form__input form-control" type="text" name="relation" placeholder="Relationship to Patient"/>
+          </div>
+        </div>
+       
+       
+      </div>
+      <div class="button-row d-flex mt-4">
+        <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+        <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+      </div>
+    </div>
+  </div>
+  <!--single form panel-->
+  <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+    <h5 align="center" class="multisteps-form__title">Additional Comments</h5>
+    <div class="multisteps-form__content">
+      <div class="form-row mt-4">
+        <textarea class="multisteps-form__textarea form-control" name="comments" placeholder="Additional Comments and Requirements"></textarea>
+      </div>
+      <div class="button-row d-flex mt-4">
+        <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+        <button class="btn btn-success ml-auto" type="button" id="submitForm" title="Send">Send</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+      </div>
+    </div>
+  </div>
+  <script>
+    // DOM elements
+    const DOMstrings = {
+      stepsBtnClass: 'multisteps-form__progress-btn',
+      stepsBtns: document.querySelectorAll(`.multisteps-form__progress-btn`),
+      stepsBar: document.querySelector('.multisteps-form__progress'),
+      stepsForm: document.querySelector('.multisteps-form__form'),
+      stepsFormTextareas: document.querySelectorAll('.multisteps-form__textarea'),
+      stepsFormPanels: document.querySelectorAll('.multisteps-form__panel'),
+      stepPrevBtnClass: 'js-btn-prev',
+      stepNextBtnClass: 'js-btn-next'
+    };
+
+    const getActiveStep = () => {
+      let activeStep;
+      DOMstrings.stepsBtns.forEach((elem, index) => {
+        if (elem.classList.contains('js-active')) {
+          activeStep = index;
+        }
+      });
+      return activeStep;
+    };
+
+    const setActiveStep = activeStepNum => {
+      DOMstrings.stepsBtns.forEach((elem, index) => {
+        if (index === activeStepNum) {
+          elem.classList.add('js-active');
+        } else {
+          elem.classList.remove('js-active');
+        }
+      });
+    };
+
+    const getActivePanel = () => {
+      let activePanel;
+      DOMstrings.stepsFormPanels.forEach(elem => {
+        if (elem.classList.contains('js-active')) {
+          activePanel = elem;
+        }
+      });
+      return activePanel;
+    };
+
+    const setActivePanel = activePanelNum => {
+      DOMstrings.stepsFormPanels.forEach((elem, index) => {
+        if (index === activePanelNum) {
+          elem.classList.add('js-active');
+        } else {
+          elem.classList.remove('js-active');
+        }
+      });
+    };
+
+    // Click handling for the buttons
+    DOMstrings.stepsBar.addEventListener('click', e => {
+      const target = e.target;
+      if (!target.classList.contains(DOMstrings.stepsBtnClass)) {
+        return;
+      }
+
+      const activeStep = [...DOMstrings.stepsBtns].indexOf(target);
+      setActiveStep(activeStep);
+      setActivePanel(activeStep);
+    });
+
+    // Handling the next and previous buttons
+    DOMstrings.stepsForm.addEventListener('click', e => {
+      const target = e.target;
+      if (!(target.classList.contains(DOMstrings.stepPrevBtnClass) || target.classList.contains(DOMstrings.stepNextBtnClass))) {
+        return;
+      }
+
+      const activePanel = getActivePanel();
+      let activePanelNum = [...DOMstrings.stepsFormPanels].indexOf(activePanel);
+
+      if (target.classList.contains(DOMstrings.stepPrevBtnClass)) {
+        activePanelNum--;
+      } else {
+        activePanelNum++;
+      }
+
+      setActiveStep(activePanelNum);
+      setActivePanel(activePanelNum);
+    });
+
+    // Submission handling
+    document.getElementById('submitForm').addEventListener('click', () => {
+      const formData = new FormData(document.getElementById('msform'));
+      let formValues = '';
+      formData.forEach((value, key) => {
+        formValues += `${key}: ${value}\n`;
+      });
+
+      const email = 'example@example.com';
+      const subject = 'Form Submission';
+      const body = encodeURIComponent(formValues);
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    });
+  </script>
+                    <div class="col-lg-2 col-xl-2 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="bg-transparent rounded">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+                        
+                       
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Contact End -->
 
 
         <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Wellness</h4>
-                            <p>"Attain holistic wellness through personalized physiotherapy interventions, fostering optimal physical and mental health for a vibrant life."
-                            </p>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Quick Links</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Our Blog & News</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Our Team</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Wellness Services</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> All Services</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Physiotherapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Diagnostics</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Manual Therapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Massage Therapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Rehabilitation</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Contact Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> help@wellness.com</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> consult@wellness.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Wellness</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://www.kwaga.in/">Kwaga Team</a> Distributed By <a class="border-bottom" href="https://www.kwaga.in/">Kwaga</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+
+
+
+<!-- Bootstrap and necessary plugins -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- Copyright End -->
 
         <!-- Back to Top -->
