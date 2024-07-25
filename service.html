@@ -75,20 +75,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                       <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link active">Services</a>
-                          <a href="testimonial.html" class="nav-item nav-link">Review</a>
-                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">For Patients</a>
-                            <div class="dropdown-menu m-0">
-                                
-                               
-                                <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                <a href="team.html" class="dropdown-item">Our Doctor</a>
-                                
-                            </div>
-                        </div>
+                          <a href="feedback.html" class="nav-item nav-link">Feedback</a>
+                            <a href="schedule.html" class="nav-item nav-link">Schedule</a>
+                         
                        
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
@@ -100,383 +92,670 @@
         <!-- Navbar End -->
 
         <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h1>
-               <!-- <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">Services</li>
-                </ol> -->
-            </div>
-        </div>
+<br><br><br>
+       <style>
+.carousel-inner img {
+  image-rendering: pixelated;
+  width: 100%;
+  height: auto;
+  border: 12px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.2),
+    inset 0 0 4px rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item {
+  position: absolute;
+  margin: auto;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  width: 100%;
+}
+
+.carousel-item.active {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active.carousel-item-right,
+.carousel-item.active.carousel-item-left {
+  z-index: 1;
+}
+
+.carousel-item:not(.active) {
+  transform: scale(0.8) translateY(20px);
+  opacity: 0.5;
+}
+
+.carousel-inner {
+  perspective: 1000px;
+  position: relative;
+  height: 400px;
+}
+
+body,
+html {
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(
+    to left bottom,
+    #3d5b34,
+    #567f39,
+    #78a337,
+    #a1c72e,
+    #d3eb12
+  );
+}
+
+.carousel {
+  max-width: 600px;
+  margin: auto;
+}
+
+.photo-credit {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.photo-credit a {
+  color: #035b38;
+  text-decoration: none;
+}
+
+.photo-credit a:hover {
+  text-decoration: underline;
+}
+</style>
+<section>
+<div class="col-12 center mt-4">
+  <div id="stackedSlideshow" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner"><br>
+       <div class="carousel-item active">
+        <img src="https://plus.unsplash.com/premium_photo-1661779394380-e372d6a1f198?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFudWFsJTIwVGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D" alt="Image 1" class="d-block w-100">
+        <div class="overlay-title">Manual Therapy</div>
+    </div>
+      <div class="carousel-item">
+        <img src="https://plus.unsplash.com/premium_photo-1661284955195-e5c08780aa8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RXhlcmNpc2UlMjBUaGVyYXB5fGVufDB8fDB8fHww" alt="Image 2" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://plus.unsplash.com/premium_photo-1661386039700-95e7d466ef2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RWxlY3Ryb3RoZXJhcHl8ZW58MHx8MHx8fDA%3D" alt="Image 3" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://plus.unsplash.com/premium_photo-1661581845192-dd0e2c221ac6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SHlkcm90aGVyYXB5fGVufDB8fDB8fHww" alt="Image 4" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://plus.unsplash.com/premium_photo-1661698465350-dab93e1b2df8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8R2VyaWF0cmljJTIwUGh5c2lvdGhlcmFweSUzQXxlbnwwfHwwfHx8MA%3D%3D" alt="Image 5" class="d-block w-100">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#stackedSlideshow" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#stackedSlideshow" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+  <div class="photo-credit">
+    Therapy <a href="#"></a>  <a href="#">Services</a>
+  </div>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script>
+  $('#stackedSlideshow').on('slide.bs.carousel', function (e) {
+            var direction = e.direction === 'left' ? 'next' : 'prev';
+            var items = $(this).find('.carousel-item');
+            items.css('z-index', 1);
+            $(e.relatedTarget).css('z-index', 3);
+            var activePos = $(e.relatedTarget).index();
+            var nextPrevItem = items.eq(direction === 'next' ? (activePos + 1) % items.length : (activePos - 1 + items.length) % items.length);
+            nextPrevItem.css('z-index', 2);
+        });
+        </script>
         <!-- Header End -->
 
 
         <!-- Services Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0">What We Do</h4>
-                    </div>
-                    <h1 class="display-3 mb-4">Our Service Given Physio Therapy By Expert.</h1>
-                    <p class="mb-0">"Experience expert-guided physiotherapy tailored to your needs for optimal recovery and wellness."</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Message Therapy</h5>
-                                    <p class="mb-4">Relax and rejuvenate with personalized massage techniques to alleviate tension and promote overall well-being.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Physiotherapy</h5>
-                                    <p class="mb-4">Regain mobility and strength through targeted exercises and manual therapy administered by qualified professionals.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-3.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Heat & Cold Therapy</h5>
-                                    <p class="mb-4">Harness the therapeutic benefits of temperature modulation to reduce inflammation, ease pain, and enhance healing.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-4.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Chiropatic Therapy</h5>
-                                    <p class="mb-4">Achieve spinal alignment and nervous system balance with precise adjustments tailored to your individual needs.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-5.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Work Injuries</h5>
-                                    <p class="mb-4">Receive specialized care and rehabilitation to recover from work-related injuries and prevent future complications.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-6.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Spot Injuries</h5>
-                                    <p class="mb-4">Address specific areas of discomfort or injury with focused treatment strategies designed for optimal recovery.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-7.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Regular Therapy</h5>
-                                    <p class="mb-4">Maintain peak physical condition and prevent injuries through ongoing therapeutic interventions and personalized guidance.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-8.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Back Pain</h5>
-                                    <p class="mb-4">Find relief from back discomfort through targeted therapies aimed at addressing the underlying causes .</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="servicesmore.html">Services More</a> -->
-                    </div>
-                </div>
-            </div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<section>
+<div class="container">
+  <h2 align="center">Overview  Therapy Services</h2>
+  <hr>
+  <div class="accordion accordion-flush border" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="bi bi-check-circle-fill me-2 text-success pulse"></i> <span class="badge bg-primary me-2"> Talk Therapy</span><div style="font-size: 20px; color: #000;">&#128071;</div>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul class="list-group">
+            <li class="list-group-item"><b>Cognitive Behavioral Therapy (CBT):</b> Focuses on identifying and changing negative thought patterns and behaviors.</li>
+            <li class="list-group-item"><b>Dialectical Behavior Therapy (DBT):</b> Helps individuals manage emotions and improve relationships through mindfulness and coping strategies</li>
+            <li class="list-group-item"><b>Psychodynamic Therapy: </b>Explores unconscious thoughts and childhood experiences to understand current behavior and emotions.</li>
+            <li class="list-group-item"><b>Humanistic Therapy: </b>Emphasizes personal growth and self-actualization, often through techniques like client-centered therapy.</li>
+          </ul>
+         
         </div>
-        <!-- Services End -->
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="bi bi-check-circle-fill me-2 text-warning pulse"></i> <span class="badge bg-primary me-2"> Behavioral Therapy</span><div style="font-size: 20px; color: #000;">&#128071;</div>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul class="list-group">
+            <li class="list-group-item"><b>Exposure Therapy: </b> Gradually exposes individuals to feared situations or objects to reduce anxiety.</li>
+            <li class="list-group-item"><b>Operant Conditioning: </b> Uses reinforcement and punishment to modify behavior</li>
+          
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
+          <i class="bi bi-check-circle-fill me-2 text-success pulse"></i> <span class="badge bg-success me-2"> Cognitive Therapy</span><div style="font-size: 20px; color: #000;">&#128071;</div>
+        </button>
+      </h2>
+      <div id="collapseTree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Focuses on changing distorted thinking patterns and beliefs that contribute to emotional distress.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          <i class="bi bi-check-circle-fill me-2 text-success pulse"></i> <span class="badge bg-warning me-2">Family Therapy</span><div style="font-size: 20px; color: #000;">&#128071;</div>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul class="list-group">
+            <li class="list-group-item"><b>Systemic Therapy:  </b> Addresses family dynamics and communication issues.</li>
+            <li class="list-group-item"><b>Structural Family Therapy: </b> Examines and alters family structures and hierarchies.</li>
+          
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          <i class="bi bi-check-circle-fill me-2 text-danger pulse"></i> <span class="badge bg-danger me-2">Specialized Therapies</span><div style="font-size: 20px; color: #000;">&#128071;</div>
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul class="list-group">
+            <li class="list-group-item"><b>Art Therapy: </b> Uses creative expression to explore emotions and issues. </li>
+            <li class="list-group-item"><b>Play Therapy: </b> Utilizes play to help children express and process feelings.</li>
+           <li class="list-group-item"><b>Music Therapy:  </b> Involves using music to address emotional, cognitive, and social needs.</li>
+            <li class="list-group-item"><b>Animal-Assisted Therapy: </b> Incorporates animals to improve emotional and physical well-being.</li>
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<br>
+<div class="btn-group" align="center"role="group" aria-label="Basic example">
+  <a href="schedule.html"><button type="button" class="btn btn-primary">Schedule</button></a>
+  <a href="contact -Us.html"><button type="button" class="btn btn-secondary">Contact Us</button></a>
+  <a href="appointment.html"><button type="button" class="btn btn-info">Appointement</button></a>
+</div>
+<br>
+<!--<h1>Coursera Specializations</h1>
 
+<ul>
+    <li><a href="#computer">Computer Science</a></li>
+    <li><a href="#data">Data Science</a></li>
+    <li><a href="#business">Business</a></li>
+</ul>
+
+<h3 id="computer">Computer Science</h3>
+
+<table>
+    <tr>
+        <th class="name">Name</th>
+        <th class="description">Description</th>
+        <th class="courses">Courses List</th>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/full-stack?utm_medium=listingPage"><img src="https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/HKUST_Full-Stack-Web-Development_Getty488025987.jpg"/><br/>Full Stack Web Development</a><br/><br/><em>The Hong Kong University of Science and Technology</em></td>
+        <td class="description">The first two courses in this Specialization include an orientation to client-side development, covering HTML/CSS, JavaScript/JQuery, and frameworks such as AngularJS and Bootstrap. On the server side, you’ll learn to implement NoSQL databases using MongoDB, work within a Node.js environment, and communicate to the client side through a RESTful API. You’ll also learn to create hybrid mobile applications, using the Ionic framework and Cordova. In the final Capstone Project, you’ll apply your skills to build a fully functional web and hybrid mobile application with back-end support.</td>
+        <td class="courses">
+            <ol>
+                <li>HTML, CSS and JavaScript</li>
+                <li>Front-End Web UI Frameworks and Tools</li>
+                <li>Front-End JavaScript Frameworks: AngularJS</li>
+                <li>Multiplatform Mobile App Development with Web Technologies</li>
+                <li>Server-side Development with NodeJS</li>
+                <li>Full Stack Web Development Specialization Capstone Project</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/fundamentalscomputing2?utm_medium=listingPage"><img src="https://d15cw65ipctsrr.cloudfront.net/36/f74e20a2a811e4ba29d775ee5247cc/FoC-Spsn-logo.jpg"/><br/>Fundamentals of Computing</a><br/><br/><em>Rice University</em></td>
+        <td class="description">This 26 week long sequence of courses introduces learners to the basics of analyzing and solving computational problems. It begins with an introduction to the Python programming language, transitions to a focus on mathematical and programming techniques, and concludes with an introduction to mathematical tools for reasoning about the correctness and efficiency of algorithms. Completion of the series provides learners with a solid foundation in mathematical and programming techniques.</td>
+        <td class="courses">
+            <ol>
+                <li>An Introduction to Interactive Programming in Python (Part 1)</li>
+                <li>An Introduction to Interactive Programming in Python (Part 2)</li>
+                <li>Principles of Computing (Part 1)</li>
+                <li>Principles of Computing (Part 2)</li>
+                <li>Algorithmic Thinking (Part 1)</li>
+                <li>Algorithmic Thinking (Part 2)</li>
+                <li>The Fundamentals of Computing Specialization Capstone Exam</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/java-programming?utm_medium=listingPage"><img src="https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/Duke_JavaProgrammingIntrotoSoftware_CM195522.jpg"/><br/>Java Programming: An Introduction to Software</a><br/><br/><em>Duke University</em></td>
+        <td class="description">This Specialization covers the fundamentals of software development, focusing on a beginner-level introduction to rigorous problem-solving approaches while still embracing and extending traditional methods of computer science and software engineering. You’ll explore foundational concepts such as algorithm development, data representation, and debugging, using common tools such as HTML/CSS, Javascript, and Java. In the final Capstone Project, you’ll apply the skills you learned by creating a working recommender system that can help users find and choose items, such as films, books, or restaurants. Google has contributed real-world projects and the involvement of its engineers as guest lecturers to these courses.</td>
+        <td class="courses">
+            <ol>
+                <li>Programming and the Web for Beginners</li>
+                <li>Java Programming: Solving Problems with Software</li>
+                <li>Java Programming: Arrays, Lists and Structured Data</li>
+                <li>Java Programming: Principles of Software Design</li>
+                <li>Java Programming: a DIY version of Netflix and Amazon recommendation engines</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/java-object-oriented?utm_medium=listingPage"><img src="https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/UCSD_JavaProgrammingOODDS_Getty483605575.jpg"/><br/>Java Programming: Object-Oriented Design of Data Structures</a><br/><br/><em>University of California, San Diego</em></td>
+        <td class="description">This Specialization covers intermediate topics in software development. You’ll learn object-oriented programming principles that will allow you to use Java to its full potential, and you’ll implement data structures and algorithms for organizing large amounts of data in a way that is both efficient and easy to work with. You’ll also practice critically evaluating your own code, and you’ll build technical communication skills that will help you prepare for job interviews and collaborative work as a software engineer. In the final Capstone Project, you’ll apply your skills to analyze data collected from a real-world (social) network. Google has contributed real-world projects and the involvement of its engineers as guest lecturers to these courses. A small, select group of top learners who complete the Specialization will be offered practice interviews with Google recruiters. Invitation to a practice interview does not guarantee an actual interview or employment.</td>
+        <td class="courses">
+            <ol>
+                <li>Object Oriented Programming in Java</li>
+                <li>Data structures: Measuring and Optimizing Performance</li>
+                <li>Advanced Data Structures in Java</li>
+                <li>Mastering the Software Engineering Interview</li>
+                <li>Capstone: Analyzing (Social) Network Data</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<h3 id="data">Data Science</h3>
+
+<table>
+    <tr>
+        <th class="name">Name</th>
+        <th class="description">Description</th>
+        <th class="courses">Courses List</th>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/big-data?utm_medium=listingPage"><img src="https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/UCSD_BigData_PartnerProvided.jpg"/><br/>Big Data</a><br/><br/><em>University of California, San Diego & Splunk</em></td>
+        <td class="description">In this Specialization, you will develop a robust set of skills that will allow you to process, analyze, and extract meaningful information from large amounts of complex data. You will install and configure Hadoop with MapReduce, use Spark, Pig and Hive, perform predictive modelling with open source tools, and leverage graph analytics to model problems and perform scalable analytical tasks. In the final Capstone Project, developed in partnership with data software company Splunk, you’ll apply the skills you learned by building your own tools and models to analyze big data in the context of retail, sports, current events, or another area of your choice.</td>
+        <td class="courses">
+            <ol>
+                <li>Introduction to Big Data</li>
+                <li>Hadoop Platform and Application Framework</li>
+                <li>Introduction to Big Data Analytics</li>
+                <li>Machine Learning With Big Data</li>
+                <li>Introduction to Graph Analytics</li>
+                <li>Big Data - Capstone Project</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/jhudatascience?utm_medium=listingPage"><img src="https://s3.amazonaws.com/coursera/specializations/jhudatascience/logo_small.png"/><br/>Data Science</a><br/><br/><em>Johns Hopkins University & SwiftKey</em></td>
+        <td class="description">This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you’ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material.</td>
+        <td class="courses">
+            <ol>
+                <li>The Data Scientist’s Toolbox</li>
+                <li>R Programming</li>
+                <li>Getting and Cleaning Data</li>
+                <li>Exploratory Data Analysis</li>
+                <li>Reproducible Research</li>
+                <li>Statistical Inference</li>
+                <li>Regression Models</li>
+                <li>Practical Machine Learning</li>
+                <li>Developing Data Products</li>
+                <li>Data Science Capstone</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/datamining?utm_medium=listingPage"><img src="https://d15cw65ipctsrr.cloudfront.net/be/2a1a70549811e488f71bde41e2f01a/data_mining_specialization_logo.jpg"/><br/>Data Mining</a><br/><br/><em>University of Illinois at Urbana-Champaign & Yelp</em></td>
+        <td class="description"></td>
+        <td class="courses">
+            <ol>
+                <li>Pattern Discovery in Data Mining</li>
+                <li>Text Retrieval and Search Engines</li>
+                <li>Cluster Analysis in Data Mining</li>
+                <li>Text Mining and Analytics</li>
+                <li>Data Visualization</li>
+                <li>Data Mining Capstone</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/machine-learning?utm_medium=listingPage"><img src="https://d396qusza40orc.cloudfront.net/phoenixassets/machine-learning-s12n/machinelearning.jpg"/><br/>Machine Learning</a><br/><br/><em>University of Washington & Dato</em></td>
+        <td class="description">This Specialization provides a case-based introduction to the exciting, high-demand field of machine learning. You’ll learn to analyze large and complex datasets, build applications that can make predictions from data, and create systems that adapt and improve over time. In the final Capstone Project, you’ll apply your skills to solve an original, real-world problem through implementation of machine learning algorithms.</td>
+        <td class="courses">
+            <ol>
+                <li>Machine Learning Foundations: A Case Study Approach</li>
+                <li>Regression</li>
+                <li>Classification</li>
+                <li>Clustering & Retrieval</li>
+                <li>Recommender Systems & Dimensionality Reduction</li>
+                <li>Machine Learning Capstone: An Intelligent Application with Deep Learning</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<h3 id="business">Business</h3>
+
+<table>
+    <tr>
+        <th class="name">Name</th>
+        <th class="description">Description</th>
+        <th class="courses">Courses List</th>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/business-analytics?utm_medium=listingPage"><img src="https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/Penn_BusinessAnalytics_Istock49060600.jpg"/><br/>Business Analytics</a><br/><br/><em>University of Pennsylvania</em></td>
+        <td class="description">This Specialization provides an introduction to big data analytics for all business professionals, including those with no prior analytics experience. You’ll learn how data analysts describe, predict, and inform business decisions in the specific areas of marketing, human resources, finance, and operations, and you’ll develop basic data literacy and an analytic mindset that will help you make strategic decisions based on data. In the final Capstone Project, you’ll apply your skills to interpret a real-world data set and make appropriate business strategy recommendations.</td>
+        <td class="courses">
+            <ol>
+                <li>Customer Analytics</li>
+                <li>Operations Analytics</li>
+                <li>People Analytics</li>
+                <li>Accounting Analytics</li>
+                <li>Business Analytics Capstone</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/whartonfoundations?utm_medium=listingPage"><img src="https://d15cw65ipctsrr.cloudfront.net/a1/d14330b09111e4a046911a37b87011/Specializations-logo.jpg"/><br/>Business Foundations</a><br/><br/><em>University of Pennsylvania & Shazam & SnapDeal</em></td>
+        <td class="description">In this Specialization, you’ll develop basic literacy in the language of business, which you can use to transition to a new career, start or improve your own small business, or apply to business school to continue your education. In four courses, you’ll learn the fundamentals of marketing, accounting, operations, and finance. In the final Capstone Project, you’ll apply the skills learned by developing a go-to-market strategy to address a real business challenge.</td>
+        <td class="courses">
+            <ol>
+                <li>Introduction to Marketing</li>
+                <li>Introduction to Financial Accounting</li>
+                <li>Introduction to Operations Management</li>
+                <li>Introduction to Corporate Finance</li>
+                <li>Wharton Business Foundations Capstone</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/business-strategy?utm_medium=listingPage"><img src="https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/UVA_Businessstrategy_Getty183489780.jpg"/><br/>Business Strategy</a><br/><br/><em>University of Virginia</em></td>
+        <td class="description">This Specialization covers both the dynamics and the global aspects of strategic management. With cases drawn from leading companies like Disney, Microsoft and Zappos, you'll learn how to evaluate industry evolution, build and sustain competitive advantage, formulate and assess business strategies, and align efforts to organizational strategy. In the final Capstone Project, you’ll apply your skills by creating a complete strategic plan for an existing business or a venture of your own. Top-rated Capstone Projects will be reviewed by Professors Michael J. Lenox and Jared D. Harris and as many as 50 top Specialists in Business Strategy will have their application fees to Darden waived.</td>
+        <td class="courses">
+            <ol>
+                <li>Foundations of Business Strategy</li>
+                <li>Advanced Business Strategy</li>
+                <li>Business Growth Strategy</li>
+                <li>Strategic Planning and Execution</li>
+                <li>Business Strategy Capstone</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td class="name"><a href="https://www.coursera.org/specializations/excel-mysql?utm_medium=listingPage"><img src="https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/Duke_ExceltoMySQLGetty529354813.jpg"/><br/>Excel to MySQL: Analytic Techniques for Business</a><br/><br/><em>Duke University</em></td>
+        <td class="description">In this Specialization, you’ll learn to frame business challenges as data questions. You’ll use powerful tools and methods such as Excel, Tableau, and MySQL to analyze data, create forecasts and models, design visualizations, and communicate your insights. In the final Capstone Project, you’ll apply your skills to explore and justify improvements to a real-world business process.</td>
+        <td class="courses">
+            <ol>
+                <li>Business Metrics for Data-Driven Companies</li>
+                <li>Mastering Data Analysis in Excel</li>
+                <li>Data Visualization and Communication with Tableau</li>
+                <li>Managing Big Data with MySQL</li>
+                <li>Excel to MySQL: Analytic Techniques for Business Capstone</li>
+            </ol>
+        </td>
+    </tr>
+</table>---->
+<style>
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li a {
+    font-size: 20px;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black;  
+}
+
+td {
+    padding: 10px 10px 10px 10px;
+}
+
+.name {
+    width: 200px;
+    text-align: center;
+}
+
+.courses {
+    width: 400px;
+}
+
+.description {
+    width: 700px;
+    font-size: 15px;
+}
+
+img {
+    width: 100px;
+}
+</style>
 
         <!-- Feature Start -->
-               <div class="container-fluid feature py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
-                    </div>
-                    <h1 class="display-3 mb-4">Why Choose Us? Get Your Life Style Back</h1>
-                    <p class="mb-0">"Regain Your Lifestyle: Choose Us for Effective Physiotherapy Solutions."!</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-diagnoses fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Licensed Therapist</h5>
-                                    <p class="mb-0">Receive care from qualified professionals certified in their field of expertise.,</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-briefcase-medical fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Personalized Treatment</h5>
-                                    <p class="mb-0">Tailored therapy designed to address your individual needs and preferences...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-hospital-user fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Therapy Goals</h5>
-                                    <p class="mb-0">Collaboratively set objectives to guide and measure progress throughout your treatment..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-users fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Practitioners Network</h5>
-                                    <p class="mb-0">Access to a diverse network of healthcare providers for comprehensive care ....</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   <!-- <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-spa fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Comfortable Center</h5>
-                                    <p class="mb-0">Experience therapy in a welcoming and soothing environment ....</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-heart fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Experienced Stuff</h5>
-                                    <p class="mb-0">Benefit from the expertise and proficiency of a seasoned team dedicated to your well-being..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fab fa-pied-piper fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Therapy Goals</h5>
-                                    <p class="mb-0">Clear objectives set collaboratively to drive treatment progress and outcomes...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-user-md fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Licensed Therapist</h5>
-                                    <p class="mb-0">Professional expertise and accreditation ensuring high-quality and effective therapy .</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>--> 
-                     <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="feature.html" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Muli", sans-serif;
+}
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.faq-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  color: #2ecc71;
+  content: "\f075";
+  font-family: "Font Awesome 6 Free";
+  font-size: 7rem;
+  left: 20px;
+  opacity: 0.2;
+  position: absolute;
+  top: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: #3498db;
+  left: -30px;
+  top: -10px;
+  transform: rotateY(180deg);
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  height: 30px;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+}
+.faq-toggle .fa-times,
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+.faq-toggle .fa-chevron-down {
+  display: block;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
+</style>
+
+
+
+
+<h3>Frequently Asked Questions</h3>
+<div class="faq-container">
+  <div class="faq active">
+    <h5 class="faq-title">Are physiotherapy treatments painful?</h5>
+    <p class="faq-text">Physiotherapy treatments are not  excessively painful. Some techniques might cause mild discomfort.</p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq">
+    <h5 class="faq-title">What should I wear to my physiotherapy appointments?</h5>
+    <p class="faq-text">Wear comfortable, loose-fitting clothing that allows easy access to the area being treated. Athletic wear is usually a good choice.</p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq">
+    <h5 class="faq-title">What are the costs of physiotherapy services?</h5>
+    <p class="faq-text">Costs can vary based on the type of service, duration, and location. It’s best to check with the clinic for specific pricing and payment options.</p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq">
+    <h5 class="faq-title">What should I expect during my first visit?</h5>
+    <p class="faq-text">During your first visit, you’ll have an initial assessment where the physiotherapist will review your medical history, discuss your concerns, and perform an evaluation to develop a personalized treatment plan.</p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="faq">
+    <h5 class="faq-title">How can physiotherapy benefit me?</h5>
+    <p class="faq-text">Physiotherapy can help alleviate pain, improve mobility, enhance physical function, and prevent future injuries through tailored exercise programs and hands-on treatments..</p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+
+<script>
+
+const toggles = document.querySelectorAll(".faq-toggle");
+
+toggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    toggle.parentElement.classList.toggle("active");
+  });
+});
+</script>
+
         <!-- Feature End -->
 
 
         <!-- Testimonial Start -->
-         <div class="container-fluid testimonial py-5 wow zoomInDown" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="section-title mb-5">
-                    <div class="sub-style">
-                        <h4 class="sub-title text-white px-3 mb-0">Testimonial</h4>
-                    </div>
-                    <h1 class="display-3 mb-4">What Clients are Say</h1>
-                </div>
-                <div class="testimonial-carousel owl-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-inner p-5">
-                            <div class="testimonial-inner-img mb-4">
-                                <img src="https://source.unsplash.com/5kCxJs_W4Fs" class="img-fluid rounded-circle" alt="">
-                            </div>
-                            <p class="text-white fs-7">Wellness truly transformed my recovery journey. The personalized care and attention to my needs made all the difference. I'm back on my feet and feeling stronger than ever!"
-                            </p>
-                            <div class="text-center">
-                                <h5 class="mb-2">Emli</h5>
-                                <p class="mb-2 text-white-50">New York, USA</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-inner p-5">
-                            <div class="testimonial-inner-img mb-4">
-                                <img src="img/testimonial-img.jpg" class="img-fluid rounded-circle" alt="">
-                            </div>
-                            <p class="text-white fs-7">I can't thank Physiotherapy Plus enough for their dedicated team and tailored approach to my rehabilitation. Their focus on my well-being and progress made me feel supported every step of the way.
-                            </p>
-                            <div class="text-center">
-                                <h5 class="mb-2">Rumali</h5>
-                                <p class="mb-2 text-white-50">Marinka , Ukraine</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-inner p-5">
-                            <div class="testimonial-inner-img mb-4">
-                                <img src="https://source.unsplash.com/swZl5qH7Y9o" class="img-fluid rounded-circle" alt="">
-                            </div>
-                            <p class="text-white fs-7">Choosing Physiotherapy Plus was the best decision I made for my recovery. The therapists' expertise combined with their genuine care helped me overcome my injury faster than I ever thought possible. I couldn't be happier with the results!!
-                            </p>
-                            <div class="text-center">
-                                <h5 class="mb-2">John Abraham</h5>
-                                <p class="mb-2 text-white-50">Java Island ,Indonesia</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                    <i class="fas fa-star text-secondary"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+         
         <!-- Testimonial End -->
 
 
         <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Wellness</h4>
-                            <p>"Attain holistic wellness through personalized physiotherapy interventions, fostering optimal physical and mental health for a vibrant life.
+                            <p>"Attain holistic wellness through personalized physiotherapy interventions, fostering optimal physical and mental health for a vibrant life."
                             </p>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                           
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
@@ -490,18 +769,8 @@
                             <a href=""><i class="fas fa-angle-right me-2"></i> Our Team</a>
                         </div>
                     </div>
-                   <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Wellness Services</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> All Services</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Physiotherapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Diagnostics</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Manual Therapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Massage Therapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Rehabilitation</a>
-                        </div>
-                    </div>
-                   <div class="col-md-6 col-lg-6 col-xl-3">
+                  
+                    <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Contact Info</h4>
                             <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
@@ -511,6 +780,16 @@
                             <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
                         </div>
                     </div>
+ <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Our Location</h4>
+                    <div class="map-container">
+                        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9701137989523!2d-74.00601568459478!3d40.71277527932939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQyJzQ2LjIiTiA3NMKwMDBtMDYuMiJX!5e0!3m2!1sen!2sus!4v1594876754379!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+              
+            
                 </div>
             </div>
         </div>
