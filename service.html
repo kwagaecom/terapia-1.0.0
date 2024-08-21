@@ -745,7 +745,171 @@ toggles.forEach((toggle) => {
          
         <!-- Testimonial End -->
 
+<body onload="google_translate()">
+    <div id="translation"></div>
 
+    <!-- Your other page content goes here -->
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=google_translate"></script>
+    <script>
+        function google_translate() {
+            var opt = {
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                pageLanguage: "en",
+            };
+            new google.translate.TranslateElement(opt, "translation");
+        }
+
+        addEventListener("load", function () {
+            if (document.querySelector(".goog-te-menu-frame")) {
+                document.getElementById("translation").addEventListener("click", function () {
+                    if (this.id === "translation") scrollableLanguagesList();
+                });
+                addEventListener("resize", function () {
+                    if ("none" !== document.querySelector(".goog-te-menu-frame").style.display) scrollableLanguagesList();
+                });
+            }
+        });
+
+        function scrollableLanguagesList() {
+            var iframe = document.querySelector(".goog-te-menu-frame"),
+                doc = iframe.contentWindow.document,
+                div = doc.body.children[0],
+                table = div.children[0],
+                width = div.dataset.width || parseInt(div.style.width),
+                rect,
+                diff;
+
+            if (!div.dataset.width) div.dataset.width = width;
+
+            if (innerWidth < width) {
+                rect = table.getBoundingClientRect();
+                width = rect.right - rect.left;
+                diff = width - innerWidth;
+
+                div.style.width = width - diff - 24 + "px";
+                div.style.padding = "4px 0 1em 4px";
+                div.style.overflowX = "scroll";
+            } else {
+                div.style.width = "auto";
+                div.style.padding = "4px";
+                div.style.overflowX = "visible";
+            }
+
+            rect = div.getBoundingClientRect();
+            iframe.style.width = rect.right - rect.left + "px";
+            iframe.style.height = rect.bottom - rect.top + "px";
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            translationTooltipsDisable();
+        });
+
+        function translationTooltipsDisable() {
+            _tipon = function () {
+                /*Don't display the tooltip*/
+            };
+            _tipoff = function () {
+                /*Don't hide the tooltip*/
+            };
+        }
+    </script>
+</body>
+<style>
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the translation widget */
+#translation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+    margin-bottom: 0;
+}
+
+/* Styling for the Google Translate widget */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Custom styling for the translation button */
+.goog-te-gadget-simple {
+    background-color: #007bff !important; /* Button color */
+    border: 2px solid #0056b3 !important; /* Border color */
+    border-radius: 4px;
+    color: white !important;
+    font-size: 16px !important;
+    padding:5px 10px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #0056b3 !important; /* Hover color */
+    border-color: #003f7f !important; /* Hover border color */
+}
+
+/* Customize the translation select box */
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: white !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-te-gadget img {
+    display: none !important;
+}
+
+/* Style the translation options when the user clicks on the widget */
+.goog-te-menu-frame {
+    width: 20% !important;
+    height: auto !important;
+    max-width: 30px;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the scrollable language list */
+.goog-te-menu2 {
+    max-height: 10px !important;
+    overflow-y: auto !important;
+    border: none !important;
+    padding: 1px !important;
+}
+
+/* Individual language options */
+.goog-te-menu2-item {
+    padding: 5px 10px !important;
+    cursor: pointer;
+}
+
+.goog-te-menu2-item-selected {
+    background-color: #ddd !important;
+}
+
+/* Responsive iframe styling */
+iframe.goog-te-menu-frame {
+    max-width: 20% !important;
+    height: auto !important;
+}
+</style>
         <!-- Footer Start -->
   <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
